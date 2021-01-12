@@ -1,0 +1,32 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\eversec\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\eversec\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\eversec\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files (x86)\dotnet;D:\Program Files\Java\jdk1.8.0_111\bin;D:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\nodejs;C:\Program Files\TortoiseSVN\bin;C:\Users\eversec\go\bin;C:\Users\eversec\scoop\shims;C:\Users\eversec\AppData\Local\Microsoft\WindowsApps;C:\Users\eversec\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eversec\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  10.23.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\eversec\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:96361:59)
+      at Object.<anonymous> (C:\Users\eversec\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:88636:38)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\eversec\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\eversec\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
