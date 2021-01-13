@@ -30,7 +30,7 @@ jobs: # 工作流
 #        run: npm install && npm run deploy
       - name: Build 
         run: | 
-          npm run install
+          npm install
           npm run build
           cd doc/.vuepress/dist
           echo 'liushaoqing.cn' > CNAME
