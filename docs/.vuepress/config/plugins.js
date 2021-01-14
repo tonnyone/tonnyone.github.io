@@ -67,16 +67,18 @@ module.exports = [
   [
     'vuepress-plugin-baidu-tongji', // 百度统计
     {
-      hm: '503f098e7e5b3a5b5d8c5fc2938af002',
+      hm: '778c5a0116e44d598cc2bce98ac62b52',
     },
   ],
+  //0c595c0c4d76bea3ea1d
+  //f504789ba85e2bdf31495af64eaab2f3ce5a5356
   [
     'vuepress-plugin-comment', // 评论
     {
       choosen: 'gitalk',
       options: {
-        clientID: 'a6e1355287947096b88b',
-        clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+        clientID: '0c595c0c4d76bea3ea1d',
+        clientSecret: 'f504789ba85e2bdf31495af64eaab2f3ce5a5356',
         repo: 'blog-gitalk-comment', // GitHub 仓库
         owner: 'tonnyone', // GitHub仓库所有者
         admin: ['tonnyone'], // 对仓库有写权限的人
