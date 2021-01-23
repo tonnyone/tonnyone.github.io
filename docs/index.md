@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: 禅
+heroText: 禅意Coder
 tagline: 布施、持戒、忍辱、精进、禅定、般若
 # actionText: 立刻进入 →
 # actionLink: /web/
