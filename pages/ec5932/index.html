@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>tmux 配置和使用 | 禅意coder</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="布施、持戒、忍辱、精进、禅定、般若">
+    <meta name="keywords" content="刘少卿,博客,个人技术博客,前端开发,Java开发,jenkins,scala,技术文档,,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.789648e3.css" as="style"><link rel="preload" href="/assets/js/app.020af41a.js" as="script"><link rel="preload" href="/assets/js/2.9ce7b51d.js" as="script"><link rel="preload" href="/assets/js/3.81238b20.js" as="script"><link rel="preload" href="/assets/js/26.10a98bf8.js" as="script"><link rel="prefetch" href="/assets/js/10.6bd79d2f.js"><link rel="prefetch" href="/assets/js/11.cd45bbfc.js"><link rel="prefetch" href="/assets/js/12.9a3304e0.js"><link rel="prefetch" href="/assets/js/13.9e3624fe.js"><link rel="prefetch" href="/assets/js/14.a0c59a39.js"><link rel="prefetch" href="/assets/js/15.a0951d20.js"><link rel="prefetch" href="/assets/js/16.07765aec.js"><link rel="prefetch" href="/assets/js/17.5e63df97.js"><link rel="prefetch" href="/assets/js/18.842ac38d.js"><link rel="prefetch" href="/assets/js/19.ea164192.js"><link rel="prefetch" href="/assets/js/20.630ce464.js"><link rel="prefetch" href="/assets/js/21.736ad6b4.js"><link rel="prefetch" href="/assets/js/22.5fe97562.js"><link rel="prefetch" href="/assets/js/23.e34a28f8.js"><link rel="prefetch" href="/assets/js/24.95d1abd2.js"><link rel="prefetch" href="/assets/js/25.1b2b0bbd.js"><link rel="prefetch" href="/assets/js/27.a60f9cc9.js"><link rel="prefetch" href="/assets/js/28.9f750531.js"><link rel="prefetch" href="/assets/js/29.162bfd09.js"><link rel="prefetch" href="/assets/js/30.0866c57a.js"><link rel="prefetch" href="/assets/js/31.c91a591b.js"><link rel="prefetch" href="/assets/js/32.f8d307f3.js"><link rel="prefetch" href="/assets/js/33.d5783ae3.js"><link rel="prefetch" href="/assets/js/34.fac413e6.js"><link rel="prefetch" href="/assets/js/35.15560298.js"><link rel="prefetch" href="/assets/js/36.531d8470.js"><link rel="prefetch" href="/assets/js/37.bfe1e48a.js"><link rel="prefetch" href="/assets/js/38.b9b293c6.js"><link rel="prefetch" href="/assets/js/39.90244056.js"><link rel="prefetch" href="/assets/js/4.cfbd9012.js"><link rel="prefetch" href="/assets/js/5.fbc21a25.js"><link rel="prefetch" href="/assets/js/6.2e12a1f0.js"><link rel="prefetch" href="/assets/js/7.041cd6a6.js"><link rel="prefetch" href="/assets/js/8.5578f138.js"><link rel="prefetch" href="/assets/js/9.552b48ec.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.789648e3.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu have-body-img"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/EB-logo.png" alt="禅意coder" class="logo"> <span class="site-name can-hide">禅意coder</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系列文章" class="dropdown-title"><a href="/all/" class="link-title">系列文章</a> <span class="title" style="display:none;">系列文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/nodejs1/" class="nav-link">跟我一起学NodeJs</a></li><li class="dropdown-item"><!----> <a href="/pages/javascript_yb/" class="nav-link">JavaScript 异步编程</a></li><li class="dropdown-item"><!----> <a href="/pages/kafka/" class="nav-link">kafka 相关知识</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <a href="https://github.com/tonnyone/tonnyone.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系列文章" class="dropdown-title"><a href="/all/" class="link-title">系列文章</a> <span class="title" style="display:none;">系列文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/nodejs1/" class="nav-link">跟我一起学NodeJs</a></li><li class="dropdown-item"><!----> <a href="/pages/javascript_yb/" class="nav-link">JavaScript 异步编程</a></li><li class="dropdown-item"><!----> <a href="/pages/kafka/" class="nav-link">kafka 相关知识</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <a href="https://github.com/tonnyone/tonnyone.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>一起学nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript 异步编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>kafka知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>linux的奥义</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/2fb499/" class="sidebar-link">vim的使用</a></li><li><a href="/pages/ec5932/" aria-current="page" class="active sidebar-link">tmux 配置和使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/ec5932/#session" class="sidebar-link">session</a></li><li class="sidebar-sub-header"><a href="/pages/ec5932/#命令模式" class="sidebar-link">命令模式</a></li><li class="sidebar-sub-header"><a href="/pages/ec5932/#窗口管理" class="sidebar-link">窗口管理</a></li><li class="sidebar-sub-header"><a href="/pages/ec5932/#pane-管理" class="sidebar-link">pane 管理</a></li></ul></li><li><a href="/pages/6af31d/" class="sidebar-link">wsl 日常配置</a></li><li><a href="/pages/12d552/" class="sidebar-link">命令行日常使用配置</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java语言</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-583ea4e9><div class="articleInfo" data-v-583ea4e9><ul class="breadcrumbs" data-v-583ea4e9><li data-v-583ea4e9><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-583ea4e9></a></li> <li data-v-583ea4e9><a href="/all/" title="系列文章-目录页" data-v-583ea4e9>系列文章</a></li> <li data-v-583ea4e9><a href="/all//#linux的奥义" title="系列文章#linux的奥义" data-v-583ea4e9>linux的奥义</a></li> <!----></ul> <div class="info" data-v-583ea4e9><div title="作者" class="author iconfont icon-touxiang" data-v-583ea4e9><a href="https://github.com/tonnyone" target="_blank" title="作者" class="beLink" data-v-583ea4e9>liushaoqing</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-583ea4e9><a href="javascript:;" data-v-583ea4e9>2021-01-23</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">
+          tmux 配置和使用
+        </h1> <div class="page-slot page-slot-top"><!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+     <ins class="adsbygoogle"
+          style="display:inline-block;width:100%;max-height:90px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6625304284"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="theme-vdoing-content content__default"><h1 id="tmux的使用和配置"><a href="#tmux的使用和配置" class="header-anchor">#</a> TMUX的使用和配置</h1> <h2 id="session"><a href="#session" class="header-anchor">#</a> session</h2> <p><code>tmux new-session -s basic</code> 等同于<code>tmux new -s basic</code>  新建session<br> <code>tmux detach</code>  断开当前会话，会话在后台运行
+<code>tmux a</code>  默认进入第一个会话
+<code>tmux a -t demo</code>  进入到名称为demo的会话
+<code>tmux ls</code> 查看会话
+<code>tmux kill-session -t demo</code> # 关闭demo会话
+<code>tmux kill-server</code> # 关闭服务器，所有的会话都将关闭</p> <p><code>prefix $ 重命名session</code></p> <h2 id="命令模式"><a href="#命令模式" class="header-anchor">#</a> 命令模式</h2> <p>所有的命令都可以用命令的方式执行,一般用在<code>tmux</code>内部执行命令的时候如下:</p> <p>'tmux new -s basic' 等同于 <code>ctrl+b :new -s basic</code> <code>ctrl+b s</code> 查看会话,用方向键选择,回车键进入</p> <h2 id="窗口管理"><a href="#窗口管理" class="header-anchor">#</a> 窗口管理</h2> <p>ctrl+b c    新建窗口
+Ctrl+b &amp;   关闭当前窗口（关闭前需输入y or n确认）
+Ctrl+b 0~9 切换到指定窗口
+Ctrl+b p   切换到上一窗口
+Ctrl+b n   切换到下一窗口
+Ctrl+b w   打开窗口列表，用于且切换窗口
+Ctrl+b ,   重命名当前窗口
+Ctrl+b .   修改当前窗口编号（适用于窗口重新排序）
+Ctrl+b f   快速定位到窗口（输入关键字匹配窗口名称）</p> <h2 id="pane-管理"><a href="#pane-管理" class="header-anchor">#</a> pane 管理</h2> <p>Ctrl+b &quot; 当前面板上下一分为二，下侧新建面板
+Ctrl+b % 当前面板左右一分为二，右侧新建面板
+Ctrl+b x 关闭当前面板（关闭前需输入y or n确认）
+Ctrl+b z 最大化当前面板，再重复一次按键后恢复正常（v1.8版本新增）
+Ctrl+b ! 将当前面板移动到新的窗口打开（原窗口中存å¨两个及以上面板有效）
+Ctrl+b ; 切换到最后一次使用的面板
+Ctrl+b q 显示面板编号，在编号消失前输入对应的     数字可切换到相应的面板
+Ctrl+b { 前置换当前面板
+Ctrl+b } 向后置换当前面板
+Ctrl+b Ctrl+o 顺时针旋转当前窗中的所有面板
+Ctrl+b 方向键 移动光标切换面板
+Ctrl+b o 选择下一面板
+Ctrl+b 空格键 在自带的面板布局中循环切换
+Ctrl+b Alt+方向键 以5个单元格为单位调整当前面板边缘
+Ctrl+b Ctrl+方向键 以1个单元格为单位调整当前面板边缘（Mac下被系统快捷键覆盖
+Ctrl+b t 显示时钟</p></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/tonnyone/tonnyone.github.io/edit/master/docs/10.系列文章/40.linux的奥义/11.tmux 配置和使用.md" target="_blank" rel="noopener noreferrer">编辑</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021/01/23, 09:10:58</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/2fb499/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">vim的使用</div></a> <a href="/pages/6af31d/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">wsl 日常配置</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/2fb499/" class="prev">vim的使用</a></span> <span class="next"><a href="/pages/6af31d/">wsl 日常配置</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/bf8afd/"><div>轮子哥编程的感悟(转载)</div></a> <span>01-23</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/12d552/"><div>命令行日常使用配置</div></a> <span>01-15</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/6af31d/"><div>wsl 日常配置</div></a> <span>01-15</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/tonnyone" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="mailto:liushaoqing1@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020-2021
+    <span>刘少卿 | <a href="https://github.com/tonnyone/blog" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">跟随系统</li><li class="iconfont icon-rijianmoshi">浅色模式</li><li class="iconfont icon-yejianmoshi">深色模式</li><li class="iconfont icon-yuedu">阅读模式</li></ul></div></div> <div class="body-bg" style="background:url() center center / cover no-repeat;opacity:0.5;"></div> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><i class="close-but">×</i> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;max-width:160px;max-height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.020af41a.js" defer></script><script src="/assets/js/2.9ce7b51d.js" defer></script><script src="/assets/js/3.81238b20.js" defer></script><script src="/assets/js/26.10a98bf8.js" defer></script>
+  </body>
+</html>
