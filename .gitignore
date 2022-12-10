@@ -18,3 +18,5 @@ urls.txt
 .DS_Store
 
 .yarn-error.log
+
+.idea
